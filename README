@@ -1,0 +1,15 @@
+Author: Sydney Taylor, sydney.taylor@uky.edu, 04/15/19
+Contents: README - this file
+	  parser.c - implementation of parser
+	  shell.c - implementation of shell
+	  shell.h - shell header file
+	  Makefile - builds the program
+Running: To build/compile, use Makefile and run make in command line. To execute, run ./run-tests in
+         command line to execute the tests or ./shell to run the shell.
+Implementation notes: Rather than implement functions, the entire program is in the main function.
+		      Used strcmp to compare a command with a built-in function. If the command does
+		      not match a built-in function, it is passed to the external commands redirection
+		      section. Used perror() and fprintf() to stderr to print errors. Did not implement
+		      any helper functions.	      
+Limitations: N/A
+References: Based external commands and redirection section off of Lab2.
